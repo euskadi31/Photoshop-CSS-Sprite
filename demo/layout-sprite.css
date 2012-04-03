@@ -1,1 +1,170 @@
-.layout-sprite {    background-image: url(layout-sprite.png);	background-repeat: no-repeat;	display:block;}.layout-sprite-universes-home {	width: 33px;	height: 31px;	background-position: -275px -79px;}.layout-sprite-universes-home-selected {	width: 33px;	height: 31px;	background-position: -242px -79px;}.layout-sprite-menu-arraow-white {	width: 4px;	height: 7px;	background-position: -242px -67px;}.layout-sprite-menu-arraow-black {	width: 4px;	height: 7px;	background-position: -242px -57px;}.layout-sprite-flasgs-ja {	width: 16px;	height: 11px;	background-position: -347px -39px;}.layout-sprite-flasgs-ja-selected {	width: 16px;	height: 11px;	background-position: -347px -28px;}.layout-sprite-flasgs-it {	width: 16px;	height: 11px;	background-position: -326px -39px;}.layout-sprite-flasgs-it-selected {	width: 16px;	height: 11px;	background-position: -326px -28px;}.layout-sprite-flasgs-es {	width: 16px;	height: 11px;	background-position: -305px -39px;}.layout-sprite-flasgs-es-selected {	width: 16px;	height: 11px;	background-position: -305px -28px;}.layout-sprite-flasgs-de {	width: 16px;	height: 11px;	background-position: -284px -39px;}.layout-sprite-flasgs-de-selected {	width: 16px;	height: 11px;	background-position: -284px -28px;}.layout-sprite-flasgs-en {	width: 16px;	height: 11px;	background-position: -263px -39px;}.layout-sprite-flasgs-en-selected {	width: 16px;	height: 11px;	background-position: -263px -28px;}.layout-sprite-flasgs-fr {	width: 16px;	height: 11px;	background-position: -242px -39px;}.layout-sprite-flasgs-fr-selected {	width: 16px;	height: 11px;	background-position: -242px -28px;}.layout-sprite-topbar-arrow-down {	width: 8px;	height: 8px;	background-position: -254px -61px;}.layout-sprite-topbar-forum-m {	width: 17px;	height: 18px;	background-position: -321px -56px;}.layout-sprite-topbar-forum-a {	width: 18px;	height: 18px;	background-position: -267px -56px;}.layout-sprite-topbar-forum-f {	width: 15px;	height: 18px;	background-position: -303px -56px;}.layout-sprite-topbar-forum-p {	width: 18px;	height: 18px;	background-position: -285px -56px;}.layout-sprite-topbar-search {	width: 18px;	height: 18px;	background-position: -339px -56px;}.layout-sprite-topbar-arrow {	width: 8px;	height: 34px;	background-position: -313px -77px;}.layout-sprite-search {	width: 12px;	height: 12px;	background-position: -368px -0px;}.layout-sprite-social-rss {	width: 24px;	height: 24px;	background-position: -338px -0px;}.layout-sprite-social-youtube {	width: 24px;	height: 24px;	background-position: -314px -0px;}.layout-sprite-social-gplus {	width: 24px;	height: 24px;	background-position: -266px -0px;}.layout-sprite-social-twitter {	width: 24px;	height: 24px;	background-position: -290px -0px;}.layout-sprite-social-facebook {	width: 24px;	height: 24px;	background-position: -242px -0px;}.layout-sprite-universes-bottom {	width: 982px;	height: 11px;	background-position: -0px -178px;}.layout-sprite-universes-bg-selected {	width: 982px;	height: 31px;	background-position: -0px -144px;}.layout-sprite-universes-db {	width: 982px;	height: 31px;	background-position: -0px -113px;}.layout-sprite-logo {	width: 242px;	height: 113px;	background-position: -0px -0px;}
+.layout-sprite {
+    background-image: url(layout-sprite.png);
+	background-repeat: no-repeat;
+	display:block;
+}
+.layout-sprite-universes-home {
+	width: 33px;
+	height: 31px;
+	background-position: -275px -79px;
+}
+.layout-sprite-universes-home-selected {
+	width: 33px;
+	height: 31px;
+	background-position: -242px -79px;
+}
+.layout-sprite-menu-arraow-white {
+	width: 4px;
+	height: 7px;
+	background-position: -242px -67px;
+}
+.layout-sprite-menu-arraow-black {
+	width: 4px;
+	height: 7px;
+	background-position: -242px -57px;
+}
+.layout-sprite-flasgs-ja {
+	width: 16px;
+	height: 11px;
+	background-position: -347px -39px;
+}
+.layout-sprite-flasgs-ja-selected {
+	width: 16px;
+	height: 11px;
+	background-position: -347px -28px;
+}
+.layout-sprite-flasgs-it {
+	width: 16px;
+	height: 11px;
+	background-position: -326px -39px;
+}
+.layout-sprite-flasgs-it-selected {
+	width: 16px;
+	height: 11px;
+	background-position: -326px -28px;
+}
+.layout-sprite-flasgs-es {
+	width: 16px;
+	height: 11px;
+	background-position: -305px -39px;
+}
+.layout-sprite-flasgs-es-selected {
+	width: 16px;
+	height: 11px;
+	background-position: -305px -28px;
+}
+.layout-sprite-flasgs-de {
+	width: 16px;
+	height: 11px;
+	background-position: -284px -39px;
+}
+.layout-sprite-flasgs-de-selected {
+	width: 16px;
+	height: 11px;
+	background-position: -284px -28px;
+}
+.layout-sprite-flasgs-en {
+	width: 16px;
+	height: 11px;
+	background-position: -263px -39px;
+}
+.layout-sprite-flasgs-en-selected {
+	width: 16px;
+	height: 11px;
+	background-position: -263px -28px;
+}
+.layout-sprite-flasgs-fr {
+	width: 16px;
+	height: 11px;
+	background-position: -242px -39px;
+}
+.layout-sprite-flasgs-fr-selected {
+	width: 16px;
+	height: 11px;
+	background-position: -242px -28px;
+}
+.layout-sprite-topbar-arrow-down {
+	width: 8px;
+	height: 8px;
+	background-position: -254px -61px;
+}
+.layout-sprite-topbar-forum-m {
+	width: 17px;
+	height: 18px;
+	background-position: -321px -56px;
+}
+.layout-sprite-topbar-forum-a {
+	width: 18px;
+	height: 18px;
+	background-position: -267px -56px;
+}
+.layout-sprite-topbar-forum-f {
+	width: 15px;
+	height: 18px;
+	background-position: -303px -56px;
+}
+.layout-sprite-topbar-forum-p {
+	width: 18px;
+	height: 18px;
+	background-position: -285px -56px;
+}
+.layout-sprite-topbar-search {
+	width: 18px;
+	height: 18px;
+	background-position: -339px -56px;
+}
+.layout-sprite-topbar-arrow {
+	width: 8px;
+	height: 34px;
+	background-position: -313px -77px;
+}
+.layout-sprite-search {
+	width: 12px;
+	height: 12px;
+	background-position: -368px -0px;
+}
+.layout-sprite-social-rss {
+	width: 24px;
+	height: 24px;
+	background-position: -338px -0px;
+}
+.layout-sprite-social-youtube {
+	width: 24px;
+	height: 24px;
+	background-position: -314px -0px;
+}
+.layout-sprite-social-gplus {
+	width: 24px;
+	height: 24px;
+	background-position: -266px -0px;
+}
+.layout-sprite-social-twitter {
+	width: 24px;
+	height: 24px;
+	background-position: -290px -0px;
+}
+.layout-sprite-social-facebook {
+	width: 24px;
+	height: 24px;
+	background-position: -242px -0px;
+}
+.layout-sprite-universes-bottom {
+	width: 982px;
+	height: 11px;
+	background-position: -0px -178px;
+}
+.layout-sprite-universes-bg-selected {
+	width: 982px;
+	height: 31px;
+	background-position: -0px -144px;
+}
+.layout-sprite-universes-db {
+	width: 982px;
+	height: 31px;
+	background-position: -0px -113px;
+}
+.layout-sprite-logo {
+	width: 242px;
+	height: 113px;
+	background-position: -0px -0px;
+}
