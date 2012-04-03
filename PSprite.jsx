@@ -64,12 +64,14 @@ function main() {
         } else {
 
             var name = docName.replace('.psd', '');
-            css += '.' + name + ' {' + "\n";
-            css += "\t" + 'background: url(' + name + '.png) 0 0 no-repeat;' + "\n";
+            css += '.' + name.toLowerCase() + ' {' + "\n";
+            css += "\t" + 'background-image: url(' + name + '.png);' + "\n";
+            css += "\t" + 'background-repeat: no-repeat;' + "\n";
+            css += "\t" + 'display:block;' + "\n";
             css += '}' + "\n";
 
             createSprite(app.activeDocument);
-             
+            
             // create export file in src dir
             var exportFile = new File(app.activeDocument.path + "/" + docName.replace(".psd", ".css"));
             exportFile.open("w");
@@ -98,23 +100,33 @@ function main() {
     }
 }
 
-function createSprite(doc) {
+function createSprite(doc, prefix) {
     for (var i = 0; i < doc.layers.length; i++) {
-        createSpriteElement(doc.layers[i]);
+        createSpriteElement(doc.layers[i], prefix);
     }
 }
 
-function createSpriteElement(layer) {
+function createSpriteElement(layer, prefix) {
     if (layer.typename == 'LayerSet') {
-        if(0 != layer.linkedLayers.length) {
-            createSprite(layer);
-        }
+        createSprite(layer, layer.name.toLowerCase());
     } else {
-        if(layer.bounds[2] != 0 && layer.bounds[3] != 0) {
-            css += '.' + docName.replace('.psd', '') + '-' + layer.name + ' {' + "\n";
-            css += "\t" + 'width: ' + layer.bounds[2] + ';' + "\n";
-            css += "\t" + 'height: ' + layer.bounds[3] + ';' + "\n";
-            css += "\t" + 'background-position: ' + layer.bounds[0] + ' ' + layer.bounds[1] + ';' + "\n";
+        var width = (layer.bounds[2].value - layer.bounds[0].value),
+            height = (layer.bounds[3].value - layer.bounds[1].value);
+        
+        if(width != 0 && height != 0) {
+            
+            var name = docName.replace('.psd', '').toLowerCase() + '-';
+            
+            if(prefix != undefined) {
+                name += prefix + '-';
+            }
+            
+            name += layer.name.toLowerCase();
+            
+            css += '.' + name + ' {' + "\n";
+            css += "\t" + 'width: ' + width + 'px;' + "\n";
+            css += "\t" + 'height: ' + height + 'px;' + "\n";
+            css += "\t" + 'background-position: -' + layer.bounds[0].value + 'px -' + layer.bounds[1].value + 'px;' + "\n";
             css += '}' + "\n";
         }
     }
